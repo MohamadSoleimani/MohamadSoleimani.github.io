@@ -102,10 +102,10 @@ layout: default
                     </div>
                 {% endif %}
             {% else %}
-                <!-- {% if section.name == "Computational" %}
+                {% if section.name == "Biomedical" %}
                     <div class="tab-pane overflow-auto" id="{{ section.id }}" role="tabpanel" aria-labelledby="{{ section.id }}-tab">  
                         <p><i>{{ section.description }}</i></p>
-                        {% for project in site.data.projcomp %}
+                        {% for project in site.data.projbio %}
                         <div class="media mt-2">
                         <a href="{{ project.link }}"><img src="{{ project.image }}" class="mr-3 mb-2 img-thumbnail border-0" alt="{{ project.name }}"></a>
                         <div class="media-body">
@@ -120,7 +120,7 @@ layout: default
                                 </div>
                             </div>
                         {% endfor %}
-                    </div>     -->
+                    </div>    
                 <!-- Render all other sections in their normal order -->
                 {% elsif section.name == "Publications" %}
                     <div class="tab-pane overflow-auto" id="{{ section.id }}" role="tabpanel">
